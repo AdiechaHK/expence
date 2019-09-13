@@ -36,12 +36,6 @@ jobs:
             - ~/repo/app/vendor
           key: tl-dependencies-{{ checksum "composer.json" }}
 
-      - run:
-          name: Generating encryption key
-          command: |
-            cd ~/repo
-            php artisan key:generate
-
       # run tests!
       - run:
           name: Run tests
