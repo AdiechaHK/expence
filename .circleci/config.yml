@@ -3,7 +3,6 @@ jobs:
   test:
     docker:
       - image: circleci/php:7.3.9-cli-stretch
-      - image: circleci/
 
     working_directory: ~/repo
 
