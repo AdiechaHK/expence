@@ -4,8 +4,48 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a81ea5a73ebc29fdd013d76177a616e",
+    "content-hash": "1567805cde0f50c3ad28dcc05ae3e6f4",
     "packages": [
+        {
+            "name": "adiechahk/heroku-helper",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AdiechaHK/heroku-helper.git",
+                "reference": "8b38728cd1de7c44f1f2ad2645be6c1d9e9ed4e2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AdiechaHK/heroku-helper/zipball/8b38728cd1de7c44f1f2ad2645be6c1d9e9ed4e2",
+                "reference": "8b38728cd1de7c44f1f2ad2645be6c1d9e9ed4e2",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^6.0",
+                "illuminate/support": "^6.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AdiechaHK\\HerokuHelper\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Harikrushna V. Adiecha",
+                    "email": "adiechahari@gmail.com"
+                }
+            ],
+            "description": "Commands that helps to deal with heroku using laravel app.",
+            "time": "2019-09-13T21:56:31+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -4876,7 +4916,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "adiechahk/heroku-helper": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
