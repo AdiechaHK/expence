@@ -165,7 +165,7 @@ return [
         /*
          * Package Service Providers...
          */
-        AdiechaHK\HerokuHelper\Providers\HerokuHelperServiceProvider::class,
+        // AdiechaHK\HerokuHelper\Providers\HerokuHelperServiceProvider::class,
 
         /*
          * Application Service Providers...
