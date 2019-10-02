@@ -52,12 +52,13 @@ jobs:
       - checkout
       - run:
           name: Deploy Master to Heroku
-          command: |
-            git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+          command: git push https://heroku:$HEROKU_API_KEY@git.heroku.com/$HEROKU_APP_NAME.git master
+      - run:
+          name: Installing heroku toolbelt
+          command: sudo snap install --classic heroku
       - run:
           name: Check heroku command to work
-          command: |
-            heroku run ls --app $HEROKU_APP_NAME
+          command: heroku run ls --app $HEROKU_APP_NAME
 
 workflows:
   version: 2
